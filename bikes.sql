@@ -191,6 +191,7 @@ INSERT INTO public.bikes VALUES (6, 'Road', 29, true);
 -- Data for Name: customers; Type: TABLE DATA; Schema: public; Owner: freecodecamp
 --
 
+INSERT INTO public.customers VALUES (1, '555-5555', 'Me');
 
 
 --
@@ -210,7 +211,7 @@ SELECT pg_catalog.setval('public.bikes_bike_id_seq', 9, true);
 -- Name: customers_customer_id_seq; Type: SEQUENCE SET; Schema: public; Owner: freecodecamp
 --
 
-SELECT pg_catalog.setval('public.customers_customer_id_seq', 1, false);
+SELECT pg_catalog.setval('public.customers_customer_id_seq', 1, true);
 
 
 --
