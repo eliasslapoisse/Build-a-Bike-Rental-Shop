@@ -99,6 +99,8 @@ RETURN_MENU() {
   echo -e "\nWhat's your phone number?"
   read PHONE_NUMBER
 
+  CUSTOMER_ID=$($PSQL "SELECT customer_id FROM customers WHERE phone = '$PHONE_NUMBER'")
+
   # if not found
 
   # send to main menu
