@@ -221,3 +221,4 @@ nano bike-shop.sh
 __vsc_prompt_cmd_original
 nano bike-shop.sh
 chmod +x bike-shop.sh
+./bike-shop.sh
