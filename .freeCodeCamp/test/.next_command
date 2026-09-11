@@ -225,3 +225,4 @@ chmod +x bike-shop.sh
 nano bike-shop.sh
 nano bike-shop.sh
 nano bike-shop.sh
+./bike-shop.sh
