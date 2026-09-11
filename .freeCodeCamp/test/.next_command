@@ -215,3 +215,5 @@ psql --username=freecodecamp --dbname=bikes
 ls --color=auto
 sudo service postgresql start
 psql --username=freecodecamp --dbname=bikes
+clear
+touch bike-shop.sh
