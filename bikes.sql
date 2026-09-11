@@ -1,13 +1,9 @@
-SELECT pg_terminate_backend(pg_stat_activity.pid)
-FROM pg_stat_activity
-WHERE usename = 'freecodecamp';
-
 --
 -- PostgreSQL database dump
 --
 
--- Dumped from database version 12.6 (Debian 12.6-1.pgdg90+1)
--- Dumped by pg_dump version 12.6 (Debian 12.6-1.pgdg90+1)
+-- Dumped from database version 12.22 (Ubuntu 12.22-0ubuntu0.20.04.4)
+-- Dumped by pg_dump version 12.22 (Ubuntu 12.22-0ubuntu0.20.04.4)
 
 SET statement_timeout = 0;
 SET lock_timeout = 0;
@@ -20,7 +16,7 @@ SET xmloption = content;
 SET client_min_messages = warning;
 SET row_security = off;
 
-DROP DATABASE IF EXISTS bikes;
+DROP DATABASE bikes;
 --
 -- Name: bikes; Type: DATABASE; Schema: -; Owner: freecodecamp
 --
@@ -180,15 +176,15 @@ ALTER TABLE ONLY public.rentals ALTER COLUMN rental_id SET DEFAULT nextval('publ
 -- Data for Name: bikes; Type: TABLE DATA; Schema: public; Owner: freecodecamp
 --
 
+INSERT INTO public.bikes VALUES (7, 'BMX', 19, true);
+INSERT INTO public.bikes VALUES (8, 'BMX', 20, true);
+INSERT INTO public.bikes VALUES (9, 'BMX', 21, true);
 INSERT INTO public.bikes VALUES (1, 'Mountain', 27, true);
 INSERT INTO public.bikes VALUES (2, 'Mountain', 28, true);
 INSERT INTO public.bikes VALUES (3, 'Mountain', 29, true);
 INSERT INTO public.bikes VALUES (4, 'Road', 27, true);
 INSERT INTO public.bikes VALUES (5, 'Road', 28, true);
 INSERT INTO public.bikes VALUES (6, 'Road', 29, true);
-INSERT INTO public.bikes VALUES (7, 'BMX', 19, true);
-INSERT INTO public.bikes VALUES (8, 'BMX', 20, true);
-INSERT INTO public.bikes VALUES (9, 'BMX', 21, true);
 
 
 --
