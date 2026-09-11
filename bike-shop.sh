@@ -122,6 +122,8 @@ RETURN_MENU() {
 			done
 
 			# ask for bike to return
+			echo -e "\nWhich one would you like to return?"
+
 			# if not a number
 			# send to main menu
 		fi
