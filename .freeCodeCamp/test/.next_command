@@ -317,3 +317,4 @@ trap '__vsc_preexec_all "$_"' DEBUG
 __vsc_original_prompt_command=${PROMPT_COMMAND:-}
 nano bike-shop.sh
 nano bike-shop.sh
+nano bike-shop.sh
