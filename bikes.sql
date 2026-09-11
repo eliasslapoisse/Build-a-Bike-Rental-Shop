@@ -176,15 +176,15 @@ ALTER TABLE ONLY public.rentals ALTER COLUMN rental_id SET DEFAULT nextval('publ
 -- Data for Name: bikes; Type: TABLE DATA; Schema: public; Owner: freecodecamp
 --
 
+INSERT INTO public.bikes VALUES (3, 'Mountain', 29, true);
+INSERT INTO public.bikes VALUES (4, 'Road', 27, true);
+INSERT INTO public.bikes VALUES (6, 'Road', 29, true);
 INSERT INTO public.bikes VALUES (7, 'BMX', 19, true);
 INSERT INTO public.bikes VALUES (8, 'BMX', 20, true);
-INSERT INTO public.bikes VALUES (9, 'BMX', 21, true);
+INSERT INTO public.bikes VALUES (2, 'Mountain', 28, true);
 INSERT INTO public.bikes VALUES (5, 'Road', 28, true);
-INSERT INTO public.bikes VALUES (6, 'Road', 29, true);
-INSERT INTO public.bikes VALUES (1, 'Mountain', 27, false);
-INSERT INTO public.bikes VALUES (2, 'Mountain', 28, false);
-INSERT INTO public.bikes VALUES (3, 'Mountain', 29, false);
-INSERT INTO public.bikes VALUES (4, 'Road', 27, false);
+INSERT INTO public.bikes VALUES (9, 'BMX', 21, true);
+INSERT INTO public.bikes VALUES (1, 'Mountain', 27, true);
 
 
 --
@@ -192,17 +192,29 @@ INSERT INTO public.bikes VALUES (4, 'Road', 27, false);
 --
 
 INSERT INTO public.customers VALUES (1, '555-5555', 'Me');
+INSERT INTO public.customers VALUES (2, '000-0000', 'Test');
+INSERT INTO public.customers VALUES (3, '333-3333', 'elias');
+INSERT INTO public.customers VALUES (4, '6789', 'gfhr');
+INSERT INTO public.customers VALUES (5, 'hello', 'hello');
+INSERT INTO public.customers VALUES (6, '555', 'kamel');
 
 
 --
 -- Data for Name: rentals; Type: TABLE DATA; Schema: public; Owner: freecodecamp
 --
 
-INSERT INTO public.rentals VALUES (1, 1, 1, '2026-09-11', NULL);
-INSERT INTO public.rentals VALUES (2, 1, 1, '2026-09-11', NULL);
-INSERT INTO public.rentals VALUES (3, 1, 2, '2026-09-11', NULL);
-INSERT INTO public.rentals VALUES (4, 1, 3, '2026-09-11', NULL);
-INSERT INTO public.rentals VALUES (5, 1, 4, '2026-09-11', NULL);
+INSERT INTO public.rentals VALUES (1, 1, 1, '2026-09-11', '2026-09-11');
+INSERT INTO public.rentals VALUES (2, 1, 1, '2026-09-11', '2026-09-11');
+INSERT INTO public.rentals VALUES (4, 1, 3, '2026-09-11', '2026-09-11');
+INSERT INTO public.rentals VALUES (5, 1, 4, '2026-09-11', '2026-09-11');
+INSERT INTO public.rentals VALUES (7, 2, 6, '2026-09-11', '2026-09-11');
+INSERT INTO public.rentals VALUES (8, 2, 7, '2026-09-11', '2026-09-11');
+INSERT INTO public.rentals VALUES (3, 1, 2, '2026-09-11', '2026-09-11');
+INSERT INTO public.rentals VALUES (9, 3, 8, '2026-09-11', '2026-09-11');
+INSERT INTO public.rentals VALUES (6, 1, 5, '2026-09-11', '2026-09-11');
+INSERT INTO public.rentals VALUES (10, 4, 2, '2026-09-11', '2026-09-11');
+INSERT INTO public.rentals VALUES (11, 5, 5, '2026-09-11', '2026-09-11');
+INSERT INTO public.rentals VALUES (12, 6, 9, '2026-09-11', '2026-09-11');
 
 
 --
@@ -216,14 +228,14 @@ SELECT pg_catalog.setval('public.bikes_bike_id_seq', 9, true);
 -- Name: customers_customer_id_seq; Type: SEQUENCE SET; Schema: public; Owner: freecodecamp
 --
 
-SELECT pg_catalog.setval('public.customers_customer_id_seq', 1, true);
+SELECT pg_catalog.setval('public.customers_customer_id_seq', 6, true);
 
 
 --
 -- Name: rentals_rental_id_seq; Type: SEQUENCE SET; Schema: public; Owner: freecodecamp
 --
 
-SELECT pg_catalog.setval('public.rentals_rental_id_seq', 5, true);
+SELECT pg_catalog.setval('public.rentals_rental_id_seq', 12, true);
 
 
 --
